@@ -1,4 +1,4 @@
-# acerto
+# Acerto
 
 # Testes Cypress - Bugers App
 
@@ -50,8 +50,10 @@ it('Validar que o cadastro de novo entregador ocorre com sucesso', () => {
     cy.contains('Recebemos os seus dados...').should('be.visible');
     cadastro.clicarBtnFechar();
 });
+```
 ### Caso de Teste 2: Cadastro de Entregador sem Sucesso
 
+```javascript
 it('Validar que caso o Upload não tenha sido concluído...', () => {
     // Passos para acessar o formulário de cadastro
     main.clicarIniciarCadastro();
